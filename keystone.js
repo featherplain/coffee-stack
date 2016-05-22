@@ -13,19 +13,19 @@ keystone.init({
 
 	'name': 'coffee-stack',
 	'brand': 'coffee-stack',
-	
+
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	
+
 	'emails': 'templates/emails',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'Y'
+	'user model': 'User'
 
 });
 
@@ -89,7 +89,7 @@ keystone.set('email tests', require('./routes/emails'));
 
 keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
-	'ys': 'ys'
+	'users': 'users'
 });
 
 // Start Keystone to connect to your database and initialise the web server
